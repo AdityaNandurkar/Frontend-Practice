@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        p,
+        h4 {
+            color: red;
+        }
+
+        div h1,
+        div p {
+            color: blue;
+        }
+
+        div>p {
+            color: green;
+        }
+
+        div+h1 {
+            color: rgb(13, 225, 240);
+        }
+
+        div~p {
+            color: hwb(39 11% 35%);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>This is a paragraph.</p>
+    <h4>This is a subheading.</h4>
+
+    <div class="">
+        <h1>This is a heading inside a div.</h1>
+        <p>This is a paragraph inside a div.</p>
+    </div>
+
+    <h1>This is a heading inside a div 1234.</h1>
+    <p>This is a paragraph inside a div.</p>
+    <p>This is a paragraph inside a div.</p>
+    <p>This is a paragraph inside a div.</p>
+    <p>This is a paragraph inside a div.</p>
+    <p>This is a paragraph inside a div.</p>
+    <p>This is a paragraph inside a div.</p>
+    <p>This is a paragraph inside a div.</p>
+</body>
+
+</html>

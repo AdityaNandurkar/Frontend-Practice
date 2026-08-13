@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+    <style>
+        /* Add your CSS styles here */
+        .form {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .form-label {
+            display: inline-block;
+            max-width: 200px;
+            width: 100%;
+        }
+        .input {
+            margin-bottom: 10px;
+        }
+        .radio-group {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <div class="input">
+            <label for="name" class="form-label">Username:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="input">
+            <label for="Password" class="form-label">Password:</label>
+            <input type="text" id="Password" name="Password">
+        </div>
+        <div class="input">
+            <label for="cmp" class="form-label">City of Emplolyment:</label>
+            <input type="text" id="cmp" name="cmp">
+        </div>
+
+        <div class="input">
+            <label for="web" class="form-label">Web Server : </label>
+            <select name="webServer" id="webServer">
+                <option value="">--Choose a Server--</option>
+                <option value="server1">Server 1</option>
+                <option value="server2">Server 2</option>
+                <option value="server3">Server 3</option>
+            </select>
+        </div>
+        <div class="input" style="display: flex; align-items: center;">
+            <label for="cmp" class="form-label">Please Specify <br> Your role:</label>
+            <div class="radio-group">
+                <div class="">
+                    <input type="radio" id="cmp" name="cmp">
+                    Admin
+                </div>
+                <div class="">
+                    <input type="radio" id="cmp" name="cmp">
+                    Engineer
+                </div>
+                <div class="">
+                    <input type="radio" id="cmp" name="cmp">
+                    Manager
+                </div>
+                <div class="">
+                    <input type="radio" id="cmp" name="cmp">
+                    Guest
+                </div>
+            </div>
+        </div>
+        <div class="input" style="display: flex; align-items: center;">
+            <label for="cmp" class="form-label">Single Sign-On:</label>
+            <div class="radio-group">
+                <div class="">
+                    <input type="checkbox" id="cmp" name="cmp">
+                    Mail
+                </div>
+                <div class="">
+                    <input type="checkbox" id="cmp" name="cmp">
+                    Payroll
+                </div>
+                <div class="">
+                    <input type="checkbox" id="cmp" name="cmp">
+                    self Service
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div style="background-color: red;">
+        abc
+    </div>
+    <div style="background-color: blue;">
+        abc
+    </div>
+    <br>
+    <br>
+
+    <span style="background-color: red;">abc wrwewe</span>
+    
+    <span style="background-color: blue;">abc wrwewe</span>
+</body>
+
+</html>

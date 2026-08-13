@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            border: 1px solid red;
+            display: block;
+        }
+
+        .div1 {
+            border: 1px solid green;
+            display: inline-block;
+        }
+
+        .divC {
+
+            display: flex;
+
+            div {
+                border: 1px solid orange;
+            }
+        }
+
+        .abc1 {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+
+        .abc2 {
+            background-color: rgb(79, 214, 38);
+            height: 100px;
+            width: 100px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span>This is span 1</span>
+    <span>This is span 2</span>
+    <span>This is span 3</span>
+    <span>This is span 4</span>
+    <br><br>
+    <div class="div1">This is span 1</div>
+    <div class="div1">This is span 2</div>
+    <div class="div1">This is span 3</div>
+    <div class="div1">This is span 4</div>
+    <br><br>
+
+    <div class="divC">
+        <div class="div2">This is div 1</div>
+        <div class="div2">This is div 2</div>
+        <div class="div2">This is div 3</div>
+        <div class="div2">This is div 4</div>
+    </div>
+
+
+    <div class="abc1"></div>
+    <p>Hello red</p>
+    <div class="abc2"></div>
+    <p>Hello green</p>
+</body>
+
+</html>
