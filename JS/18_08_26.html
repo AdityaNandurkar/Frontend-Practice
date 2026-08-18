@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <p id="myDemoPara"></p> -->
+
+    <p>This is My First Para</p>
+    <p>This is my Second Para</p>
+
+
+    <h1 class="heading">H1</h1>
+    <h2 class="heading">H2</h2>
+    <h3 class="heading">H3</h3>
+    <h4 class="heading">H4</h4>
+    <span class="heading">This is a Demo Span</span>
+
+    <script>
+        // get element by id
+        // const para = document.getElementById("myDemoPara");
+        // para.innerHTML = "This is my First Para";
+        // para.innerHTML = "This is my First Para 1212";
+
+        // get element by tag name
+        const para2 = document.getElementsByTagName("p");
+
+        para2[0].innerHTML = "MY Name is Aditya";
+        para2[1].innerHTML = "MY Name is Aditya";
+
+        const heading = document.getElementsByClassName("heading");
+
+        heading[0].innerHTML = "MY Name is Aditya 1";
+        heading[1].innerHTML = "MY Name is Aditya 2";
+        heading[2].innerHTML = "MY Name is Aditya 3";
+        heading[3].innerHTML = "MY Name is Aditya 4";
+         heading[4].innerHTML = "MY Name is Aditya 5";
+
+    </script>
+
+</body>
+
+</html>
