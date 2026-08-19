@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="deomP">Para 1</p>
+    <p class="deomP">Para 2</p>
+    <h4 class="deomP">Heading 1</h4>
+    <h4 class="deomP">Heading 2 </h4>
+
+    <p id="heading">Hello World</p>
+    <p id="heading2">Hello World 2</p>
+    <script>
+
+        const el1 = document.querySelector(".deomP")
+        el1.innerHTML = "Selected with querySelector";
+
+
+        // const el = document.querySelectorAll(".deomP")
+        // el[0].innerHTML = "Selected with querySelector All";
+        // el[1].innerHTML = "Selected with querySelector All";
+        // el[2].innerHTML = "Selected with querySelector All";
+        // el[3].innerHTML = "Selected with querySelector All";
+
+        const h1 = document.getElementById("heading");
+        h1.innerHTML = "<strong><i>My Name is Aditya</i></strong>";
+
+        const h2 = document.getElementById("heading2");
+        h2.innerText = "<strong><i>My Name is Aditya</i></strong>"
+    </script>
+
+</body>
+
+</html>
