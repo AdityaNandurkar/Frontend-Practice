@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flowerImage {}
+
+        .flowerImage123 {}
+    </style>
+</head>
+
+<body>
+    <img id="flowerImage" class="flowerImage flowerImage123" src="../images/img_flowers.jpg" alt="Flower Image"
+        height="200" width="200" style="border: 5px solid red;">
+
+
+
+    <p id="firstPara">This is my First Para</p>
+
+    <script>
+        const changeImage = document.getElementById("flowerImage")
+
+        changeImage.src = "../images/img_car.jpg";
+        changeImage.alt = "Car image";
+
+        const para = document.getElementById("firstPara");
+
+        para.style.color = "green";
+        para.style.backgroundColor = "red";
+        para.style.fontSize = "12px";
+
+        let num1 = 20;
+        let num2 = 10;
+        let add;
+        let sub;
+        let div;
+        let multi;
+        let power;
+        let moudle;
+
+        add = num1 + num2
+        console.log("Add => ", add)
+        sub = num1 - num2;
+        console.log("sub => ", sub)
+        div = num1 / num2
+        console.log("div => ", div)
+        multi = num1 * num2
+        console.log("multi => ", multi)
+        power = num1 ** num2
+        console.log("power => ", power)
+        moudle = num1 % num2
+        console.log("moudle => ", moudle)
+    </script>
+</body>
+
+</html>
