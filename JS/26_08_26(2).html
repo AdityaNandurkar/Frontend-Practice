@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="demo"></p>
+    <script>
+        function hello() {
+            return "Hello World 1212";
+        }
+        const value = hello();
+        const demo = document.getElementById("demo")
+
+        demo.innerHTML = value
+    </script> -->
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        function calcu(a, b, oper) {
+            let value = 0;
+            if (oper == "multi") {
+                value = a * b;
+            }
+            if (oper == "add") {
+                value = a + b;
+            }
+
+            return value;
+        }
+        let value = calcu(4, 5, 'multi');
+        let value2 = calcu(4, 5, 'add');
+        const demo2 = document.getElementById("demo2")
+        const demo3 = document.getElementById("demo3")
+        demo2.innerHTML = value
+        demo3.innerHTML = value2
+    </script>
+
+</body>
+
+</html>
