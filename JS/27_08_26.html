@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box" style="width: 150px; background-color: lightblue;border: 2px solid blue ;padding: 40px;">This is my
+        simple box</div>
+
+    <br>
+
+    <button onclick="abc()">Click</button>
+    <script>
+        const box = document.getElementById("box");
+        // box.addEventListener("mouseover", function () {
+        //     box.innerHTML = "This is mouse hover";
+        //     box.style.color = "red"
+        // })
+
+        // box.addEventListener("mouseout", function () {
+        //     box.innerHTML = "This is mouse out";
+        //     box.style.color = "green"
+        // })
+
+        // box.addEventListener("click", function () {
+        //     box.innerHTML = "This is mouse hover";
+        //     box.style.color = "red"
+        // })
+
+        box.addEventListener("dblclick", function () {
+            box.innerHTML = "This is mouse hover";
+            box.style.color = "red"
+        })
+
+
+        function abc() {
+            alert("Hello")
+        }
+    </script>
+
+</body>
+
+</html>
