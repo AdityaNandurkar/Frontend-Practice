@@ -1,0 +1,17 @@
+<h1>Name : {{name}} age : {{age}}</h1>
+
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<img [src]="srcImg" [alt]="alt" height="200" width="200" />
+<br>
+<button (dblclick)="clickMe()"> Click Image</button>
+
+<!-- two way data binding -->
+<input type="text" [(ngModel)]="name">
+
+<input type="text" #abc>
+<button (click)="getValue(abc.value)">get Value</button>
