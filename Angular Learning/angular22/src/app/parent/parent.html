@@ -1,0 +1,9 @@
+<div class="div">
+    <h4>This is Parent Component</h4>
+    <p>Name : {{ name }}</p>
+    <p>Data From Child: {{ childData }}</p>
+
+
+
+    <app-child [itemValue]="name" (dataEmitter)="getData($event)"></app-child>
+</div>

@@ -1,0 +1,9 @@
+<div class="div">
+
+    <h4>This is Child Component</h4>
+
+    <p>Data From Parent: {{ itemValue() }}</p>
+
+    <input type="text" #inputValue>
+    <button (click)="sendData(inputValue.value)">Send Data To parent</button>
+</div>
