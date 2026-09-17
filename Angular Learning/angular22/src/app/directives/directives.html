@@ -1,6 +1,61 @@
-<h1 *ngIf="isVisible;else abc">This is Conditional Directive</h1>
-<h1>This is the demo content</h1>
+<h1 *ngIf="isVisible;else abc">This is my IF Directive</h1>
 
 <ng-template #abc>
-   <h4>This is false condtion</h4>
+   <h2>This is my H2 heading</h2>
 </ng-template>
+
+
+@if(age >= 18){
+<h1>My age is 18</h1>
+}
+@else if(age >= 12 && age < 18){ <h1>My age is between 12 and 18</h1>
+   }
+   @else{
+   <h1>My age is below 12</h1>
+   }
+
+
+   <ul>
+      <li *ngFor="let item of fruits;let i = index">
+         {{i+1}}) Fruit Name : {{item.name}} | Color : {{item.color}}
+      </li>
+
+      <p *ngIf="fruits.length === 0">There is no fruits to display</p>
+   </ul>
+
+   @for(item of citys;track item.id){
+   <p> {{$index + 1}} City Name : {{item.cName}} | Population : {{item.population}}</p>
+   }
+   @empty{
+   <p>There is no citys to display</p>
+   }
+
+   <table border="1" style="width: 100%;">
+      <tr *ngFor="let item of cricket;let i = index" [ngSwitch]="item.team">
+         <ng-container *ngSwitchCase="'Mi'">
+            <td class="Mi">{{i+1}}</td>
+            <td class="Mi">{{item.city}}</td>
+            <td class="Mi">{{item.player}}</td>
+            <td class="Mi">{{item.team}}</td>
+         </ng-container>
+         <ng-container *ngSwitchCase="'LSG'">
+            <td class="LSG">{{i+1}}</td>
+            <td class="LSG">{{item.city}}</td>
+            <td class="LSG">{{item.player}}</td>
+            <td class="LSG">{{item.team}}</td>
+         </ng-container>
+         <ng-container *ngSwitchCase="'CSK'">
+            <td class="CSK">{{i+1}}</td>
+            <td class="CSK">{{item.city}}</td>
+            <td class="CSK">{{item.player}}</td>
+            <td class="CSK">{{item.team}}</td>
+         </ng-container>
+
+         <ng-container *ngSwitchDefault>
+            <td>{{i+1}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.player}}</td>
+            <td>{{item.team}}</td>
+         </ng-container>
+      </tr>
+   </table>
