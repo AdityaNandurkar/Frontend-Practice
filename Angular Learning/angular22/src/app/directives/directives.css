@@ -7,5 +7,23 @@
 }
 
 .LSG {
-    background:  red;
+    background: red;
+}
+
+.pune {
+    background: yellow;
+}
+
+.mumbai {
+    background: blue;
+}
+
+.Nashik {
+    background: red;
+}
+
+.stylingForHeading {
+    background-color: ghostwhite;
+    color: blue;
+    font-size: 50px;
 }

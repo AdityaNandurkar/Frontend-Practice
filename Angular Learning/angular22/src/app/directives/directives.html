@@ -29,7 +29,7 @@
    @empty{
    <p>There is no citys to display</p>
    }
-
+   <h4>Old Syntax</h4>
    <table border="1" style="width: 100%;">
       <tr *ngFor="let item of cricket;let i = index" [ngSwitch]="item.team">
          <ng-container *ngSwitchCase="'Mi'">
@@ -59,3 +59,62 @@
          </ng-container>
       </tr>
    </table>
+   <br>
+   <h4>New Syntax</h4>
+   <table border="1" style="width: 100%;">
+      @for(cTeam of cricket;track cTeam.id){
+      <tr>
+         @switch(cTeam.city){
+         @case ('pune'){
+         <td class="pune">{{cTeam.id}}</td>
+         <td class="pune">{{cTeam.city}}</td>
+         <td class="pune">{{cTeam.player}}</td>
+         <td class="pune">{{cTeam.team}}</td>
+         }
+
+         @case ('Mumbai'){
+         <td class="mumbai">{{cTeam.id}}</td>
+         <td class="mumbai">{{cTeam.city}}</td>
+         <td class="mumbai">{{cTeam.player}}</td>
+         <td class="mumbai">{{cTeam.team}}</td>
+         }
+         @case ('Nashik'){
+         <td class="Nashik">{{cTeam.id}}</td>
+         <td class="Nashik">{{cTeam.city}}</td>
+         <td class="Nashik">{{cTeam.player}}</td>
+         <td class="Nashik">{{cTeam.team}}</td>
+         }
+
+         @default{
+         <td>{{cTeam.id}}</td>
+         <td>{{cTeam.city}}</td>
+         <td>{{cTeam.player}}</td>
+         <td>{{cTeam.team}}</td>
+         }
+         }
+      </tr>
+      }
+   </table>
+
+
+   <h1>Attribute Directives</h1>
+
+   <h1 [ngStyle]="{
+backgroundColor:isTrue?'lightgray':'yellow',
+color:isTrue? 'red':'blue'}"> Old Format This is my Attribute
+      Directive</h1>
+
+
+   <h1 [style.backgroundColor]="isTrue?'lightgray':'yellow'" [style.color]="isTrue? 'red':'blue'"> New Foramt This is my
+      Attribute
+      Directive</h1>
+
+
+   <h2 [ngClass]="{stylingForHeading:isBg}">This is my NG Class Directive</h2>
+
+
+   <p appHighlight>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae recusandae nihil debitis earum
+      voluptate iste
+      beatae, libero blanditiis repellendus iure, ex adipisci modi et mollitia! Magni animi ratione asperiores, velit,
+      amet, distinctio dolorum minus quam esse unde omnis alias illum consequatur ipsa. Illo, recusandae. Recusandae
+      reiciendis sunt facere similique veritatis.</p>

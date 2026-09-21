@@ -1,18 +1,20 @@
 
-import { NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { NgClass, NgFor, NgIf, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component } from '@angular/core';
 import { Fruit } from '../models/frutsModel';
+import { Highlight } from '../highlight';
 
 @Component({
-  imports: [NgIf, NgFor, NgSwitch, NgSwitchCase, NgSwitchDefault],
+  imports: [NgIf, NgFor, NgSwitch, NgSwitchCase, NgSwitchDefault, NgStyle, NgClass, Highlight],
   selector: 'app-directives',
   styleUrl: './directives.css',
   templateUrl: './directives.html',
 })
 export class Directives {
   isVisible: boolean = false;
-
+  isTrue: boolean = false;
   age: number = 6;
+  isBg: boolean = false;
 
   fruits: Fruit[] = [
     { name: 'Apple', color: 'Red' },
@@ -35,7 +37,9 @@ export class Directives {
     { id: 4, city: "Nashik", player: "Virat Kohli", team: "RCB" },
     { id: 5, city: "pune", player: "KL Rahul", team: "LSG" },
     { id: 6, city: "Amravti", player: "Ruturaj Gaikwad", team: "CSK" },
-    { id: 6, city: "Amravti", player: "Ruturaj Gaikwad", team: "Pune Boys" },
-    { id: 6, city: "Amravti", player: "Ruturaj Gaikwad", team: "Pune Boys" },
+    { id: 7, city: "Amravti", player: "Ruturaj Gaikwad", team: "Pune Boys" },
+    { id: 8, city: "Amravti", player: "Ruturaj Gaikwad", team: "Pune Boys" },
   ]
+
+
 }
